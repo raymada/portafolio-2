@@ -1,0 +1,183 @@
+.head {
+    background-color: #f1cfda;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Roboto;
+    padding-bottom: 3rem;
+}
+
+.head-info{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  font-size: 1.8rem; 
+}
+
+.head-logo{
+  margin-right: 60px;
+  animation: breathing 3s ease-in-out infinite;
+}
+
+@keyframes breathing {
+  0% { transform: scale(1); } /* Escala normal */
+  50% { transform: scale(1.1); } /* Escala aumentada */
+  100% { transform: scale(1); } /* Vuelve a la escala normal */
+}
+
+.head-about{
+  line-height: 40px;
+  margin-bottom: 20px;
+}
+
+/** Enlaces **/
+.enlaces{
+  display: flex;
+  animation: bounce-in 0.5s;
+  max-width: 500px;
+  justify-content: space-around;
+}
+
+.enlaces a{
+  transition: transform 0.3s;
+}
+
+.enlaces a:hover{
+  transform: scale(1.2);
+}
+
+.enlaces-img{
+  width: 120%;
+}
+
+/** Skills **/
+
+.skills {
+  background-color: #f1cfda;
+  /* background-image: url(/assets/img/wave2.svg);*/
+  background-position: bottom;
+  background-repeat: no-repeat;
+}
+
+.tittle-sh{
+  text-align: center;
+  font-family: Roboto;
+  font-size: 4rem;
+  font-weight: 900;
+  color: #d8b2e1;
+  margin-bottom: 3rem;
+}
+
+.sh-img{
+  display: flex;
+  justify-content: center;
+  animation: bounce-in 0.5s;
+}
+
+.sh-img img{
+  max-height: 140px;
+  transition: transform 0.3s;
+}
+
+.sh-img img:hover{
+  transform: scale(1.2);
+}
+
+/** Studies **/
+
+.studies{
+  background-color: #d8b2e1;
+  min-height: 500px;
+  color: #fff;
+}
+
+.studies h1{
+  color: #fff;
+}
+
+.studies::before, .studies::after{
+  display: block;
+}
+
+.studies::before{
+  content: url(/assets/img/wave3.svg) ;
+}
+
+.studies::after{
+  content: url(/assets/img/wave2.svg) ;
+  margin-bottom: -4px;
+}
+
+.studies *{
+  border-image-width: 0px;
+}
+
+.eduaction{
+  white-space: nowrap;
+}
+
+.st-img{
+  display: inline-block; /* Coloca los elementos uno al lado del otro */
+  width: 250px; /* Ajusta el tamaño del contenedor de la imagen y texto */
+  margin: 10px; /* Ajusta el margen entre cada contenedor */
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  animation: bounce-in 0.5s;
+}
+
+.st-text{
+  text-align: center;
+  margin-top: 10px;
+}
+
+.st-img img{
+  width: 200px;
+  transition: transform 0.3s;
+}
+
+.st-img img:hover{
+  transform: scale(1.1);
+}
+
+
+/** Footer **/
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  
+
+  background-color: #fff;
+
+  padding-top: 2.5rem;
+  padding-bottom: 2rem;
+
+  color: beige;
+}
+
+.footer-nav {
+  color: #eaf2fd;
+  font-family: IBM Plex Sans;
+  text-align: center;
+  line-height: 3;
+}
+
+
+.footer__enlace {
+  margin: 0 .5rem .7rem;
+}
+
+.footer-msj{
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.footer-msj input{
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+}

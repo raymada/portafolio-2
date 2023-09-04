@@ -3,7 +3,12 @@ body{
 }
 a{
   text-decoration: none;
-  color: #f1cfda;
+  color: #1d1d1d;
+  transition: color 0.3s;
+}
+
+a:hover {
+  color: #f1cfda; 
 }
 
 .head {
@@ -223,7 +228,7 @@ a{
 }
 
 .project-img img{
-  width: 752px;
+  width: 47rem;
   height: auto;
   padding-bottom: 1rem;
   border-radius: 1rem;
@@ -261,6 +266,7 @@ a{
 }
 
 .text-overlay {
+  margin-left: 2rem;
   position: absolute;
   top: 0;
   left: 0;
@@ -277,4 +283,39 @@ a{
 
 .a{
   align-items: center;
+}
+
+@media (max-width: 768px) {
+
+  .head-logo{
+    width: 50%;
+  }
+
+  .head-svg{
+    display: none;
+  }
+
+  .head-about h1 h2{
+    font-size: 1rem;
+  }
+
+  .sh-img{
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .project-img img{
+    width: 30rem;
+  }
+
+  .projects-container{
+    display: flex;
+    flex-direction: column-reverse;
+    align-content: flex-start;
+    margin-top: 3rem;
+  }
+
+  .footer-svg{
+    display: none;
+  }
 }

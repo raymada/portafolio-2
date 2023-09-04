@@ -1,6 +1,10 @@
 body{
   font-family: 'Raleway', sans-serif;
 }
+a{
+  text-decoration: none;
+  color: #f1cfda;
+}
 
 .head {
     background-color: #f1cfda;
@@ -192,6 +196,7 @@ body{
   min-height: 500px;
   color: #1d1d1d;
   padding: 90px 90px;
+
 }
 
 .projects h1{
@@ -208,18 +213,26 @@ body{
   width: 1136px;
   gap: 16px;
   flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 
-.project{
+.project-img{
   display: flex;
   gap: 16px;
   align-items: center;
 }
 
-.projects-img img{
+.project-img img{
   width: 752px;
   height: auto;
+  padding-bottom: 1rem;
+  border-radius: 1rem;
+  transition: transform 0.3s;
  }
+
+ .project-img img:hover{
+  transform: scale(1.1);
+}
 
  .projects-text{
   font-family: Raleway;
@@ -263,6 +276,5 @@ body{
 }
 
 .a{
-
   align-items: center;
 }

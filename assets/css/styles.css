@@ -40,6 +40,7 @@ a:hover {
 .head-about{
   line-height: 40px;
   margin-bottom: 20px;
+  margin-right: 5%;
 }
 
 /** Enlaces **/
@@ -81,8 +82,10 @@ a:hover {
 
 .sh-img{
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   animation: bounce-in 0.5s;
+  padding: 0 5% 0 5%;
 }
 
 .sh-img img{
@@ -135,13 +138,9 @@ a:hover {
 }
 
 .st-img{
-  display: inline-block; /* Coloca los elementos uno al lado del otro */
-  margin: 10px; /* Ajusta el margen entre cada contenedor */
+  margin: 5%; 
   height: 286px;
   padding: 16px;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
   animation: bounce-in 0.5s;
 }
 
@@ -215,10 +214,7 @@ a:hover {
 .projects-container{
   align-items: center;
   display: flex;
-  width: 1136px;
-  gap: 16px;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
+  flex-direction: row-reverse;
 }
 
 .project-img{
@@ -228,7 +224,7 @@ a:hover {
 }
 
 .project-img img{
-  width: 47rem;
+  width: 65%;
   height: auto;
   padding-bottom: 1rem;
   border-radius: 1rem;
@@ -245,6 +241,8 @@ a:hover {
   font-style: normal;
   font-weight: 700;
   line-height: normal;
+  margin-right: 20%;
+  margin-left: 20%;
  }
 
 /** Footer **/
@@ -271,51 +269,188 @@ a:hover {
   top: 0;
   left: 0;
   height: 100%;
+  font-size: 1vw;
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   justify-content: flex-end;
   flex-direction: column;
 }
 
 .text-above-svg {
-  font-size: 15px;
+  font-size: 1vw;
+  padding: 2%;
 }
 
-.a{
+.text-overlay a{
   align-items: center;
+  padding: 1%;
+}
+
+.copy{
+  margin-left: 42%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  font-size: 1vw;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-direction: column;
 }
 
 @media (max-width: 768px) {
+
+  body, html{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .head-info{
+    display: flex;
+    flex-direction: column;
+    margin: 5%;
+  }
 
   .head-logo{
     width: 50%;
   }
 
-  .head-svg{
-    display: none;
-  }
-
-  .head-about h1 h2{
-    font-size: 1rem;
-  }
-
   .sh-img{
     display: flex;
     flex-wrap: wrap;
+    margin-right: 5%;
+    margin-left: 5%;
   }
 
   .project-img img{
-    width: 30rem;
+    margin-top: 3%;
   }
 
   .projects-container{
     display: flex;
     flex-direction: column-reverse;
-    align-content: flex-start;
-    margin-top: 3rem;
+    align-items: baseline;
+    margin-top: 5%;
   }
 
-  .footer-svg{
-    display: none;
+  .text-overlay{
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 2vw;
   }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+
+  .sh-img{
+    padding: none;
+  }
+
+  .sh-img img{
+    padding: 3%;
+  }
+
+  .text-overlay{
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 2vw;
+  }
+}
+
+@media (min-width: 321px) and (max-width: 480px) {
+
+  .head-info{
+    font-size: 1rem;
+    align-items: flex-end;
+  }
+
+  .tittle-sh {
+    font-size: 12vw;
+  }
+
+  .sh-img img{
+    padding: 5%;
+    max-height: 97px;
+  }
+
+  .studies h1{
+    font-size: 12vw;
+  }
+
+  .professional-exp{
+    padding: 90px 0;
+  }
+
+  .professional-exp h1{
+    font-size: 12vw;
+  }
+
+  .projects h1{
+    font-size: 12vw;
+  }
+
+  .projects-text{
+    font-size: 5vw;
+  }
+
+  .text-overlay{
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 2vw;
+  }
+
+}
+
+@media (max-width: 320px) {
+
+  .head-info{
+    font-size: 1rem;
+    align-items: flex-end;
+  }
+
+  .tittle-sh {
+    font-size: 12vw;
+  }
+
+  .sh-img img{
+    padding: 5%;
+    max-height: 97px;
+  }
+
+  .studies h1{
+    font-size: 12vw;
+  }
+
+  .professional-exp{
+    padding: 90px 0;
+  }
+
+  .professional-exp h1{
+    font-size: 12vw;
+  }
+
+  .projects h1{
+    font-size: 12vw;
+  }
+
+  .projects-text{
+    font-size: 5vw;
+  }
+
+  .text-above-svg{
+    font-size: 2vw;
+  }
+
+  .text-overlay{
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 2vw;
+  }
+
 }
